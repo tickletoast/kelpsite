@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topindex p {
+    display: inline-block;
+    padding-left: 8%;
+    padding-right: 8%;
+  
+}
+
+.topindex {
+    background-color: darkolivegreen;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+
+body {
+    text-align: center;
+}
+
