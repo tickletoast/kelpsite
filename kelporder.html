@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <header>
     <link href="kelporder.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
     <title>Order Here!</title>
 </header>
 <body>
@@ -9,45 +11,47 @@
         <p>Order</p>
         <p>History</p>
         <p>About Us</p>
-    </div>
+    </div><br><br><br><br>
 
-    <div class="Order-Headline"><br><br><br>
+    <div class="Order-Headline"><br>
         <h1>Your first order is free!</h1>
         <h3>(No credit card info required)</h3>
-    </div>
+    </div><br>
 
     <div class="order-form"><br><br>
         <form action="https://www.youtube.com/watch/dQw4w9WgXcQ" method="get">
             <div class="kelp-number">
-                <label for="kelp">How many kelp would you like?</label><br><br>
-                <input type="radio" name="kelp" value="one">1</input>
-                <input type="radio" name="kelp" value="two">2</input>
-                <input type="radio" name="kelp" value="three">3</input>
-                <input type="radio" name="kelp" value="four">4</input>
+                <label for="kelp">How many kelp would you like?</label><hr><br>
+                <div class="radio-numbers">
+                    <input type="radio" name="kelp" value="one">1</input>
+                    <input type="radio" name="kelp" value="two">2</input>
+                    <input type="radio" name="kelp" value="three">3</input>
+                    <input type="radio" name="kelp" value="four">4</input>
+                </div>
             </div><br><br>
 
             <div class="sides">
-                <label for="sides">Please select a side:</label><br><br>
-                <select id="sides" name="side-type">
+                <label for="sides">Please select a side:</label><hr><br>
+                <select class="side-type" id="sides" name="side-type">
                     <option value="meat">Meat!™</option>
                     <option value="gravy">Gravy (bucket)</option>
                     <option value="egg">egg</option>
-                </select>
+                </select><br>
             </div><br><br>
 
             <div class="fries">
-                <label for="kelpfries">Would you like to try our new Kelp Fries™?<br><a href="https://www.amazon.com/Potato-Russet-Conventional-1-Each/dp/B0787Y5B7D/ref=sr_1_3_0o_wf?dchild=1&keywords=potato&qid=1612382936&sr=8-3">(click for more info)</a></label><br><br>
+                <label for="kelpfries">Would you like to try our new Kelp Fries™?<br><a href="https://www.amazon.com/Potato-Russet-Conventional-1-Each/dp/B0787Y5B7D/ref=sr_1_3_0o_wf?dchild=1&keywords=potato&qid=1612382936&sr=8-3">(click for more info)</a><hr></label><br>
                 <input type="radio" name="kelpfries" value="y">Yes</input>
                 <input type="radio" name="kelpfries" value="n">No</input>
             </div><br><br>
 
             <div class="personal">
-                <label for="textinfo">Please enter your name and address below</label><br>
-                <input name="textinfo" type="text" name="firstname" id="firstname" value="First">
-                <input name="textinfo" type="text" name="lastname" id="lastname" value="Last"><br>
-                <input name="textinfo" type="text" name="street" id="streetname" value="street">
-                <input name="textinfo" type="text" name="city" id="city" value="City"><br>
-                <input type="list" list="statename">
+                <label for="textinfo">Please enter your name and address below</label><hr><br>
+                <input name="textinfo" type="text" name="firstname" id="firstname" placeholder="First">
+                <input name="textinfo" type="text" name="lastname" id="lastname" placeholder="Last"><br>
+                <input name="textinfo" type="text" name="street" id="streetname" placeholder="Street">
+                <input name="textinfo" type="text" name="city" id="city" placeholder="City"><br>
+                <input type="list" list="statename" placeholder="State">
                     <datalist id="statename">
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -100,7 +104,7 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
                     </datalist>
-                <input type="text" name="textinfo" value="Zip">
+                <input type="text" name="textinfo" placeholder="Zip">
             </div><br><br>
 
             <div class="submit">
